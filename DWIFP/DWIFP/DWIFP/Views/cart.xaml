@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="DWI.Views.cart"
+             BackgroundImageSource="bgrn.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="My Cart" Margin="0, 0, 0, 20"  HorizontalOptions="Center" TextColor="White"/>
+            <Frame CornerRadius="20" Background="transparent" BorderColor="White" >
+                <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="75" HorizontalOptions="Center">
+                <Image Source="cabe.png" HeightRequest="50" WidthRequest="50"/>
+                    <StackLayout>
+                        <Label Text="Bell Pepper Red" TextColor="White"/>
+                        <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                            <ImageButton Source="minus.png" HeightRequest="30" WidthRequest="30"/>
+                            <Label Text="1" TextColor="White"/>
+                            <ImageButton Source="plus.png" HeightRequest="25" WidthRequest="25"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label Text="$4.99" TextColor="white" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20" Background="transparent" BorderColor="White" >
+                <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="75" HorizontalOptions="Center">
+                    <Image Source="telur.png" HeightRequest="50" WidthRequest="50"/>
+                    <StackLayout>
+                        <Label Text="Red Chicken Egg" TextColor="White"/>
+                        <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                            <ImageButton Source="minus.png" HeightRequest="30" WidthRequest="30"/>
+                            <Label Text="1" TextColor="White"/>
+                            <ImageButton Source="plus.png" HeightRequest="25" WidthRequest="25"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label Text="$1.99" TextColor="white" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20" Background="transparent" BorderColor="White">
+                <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="75" HorizontalOptions="Center">
+                    <Image Source="pisang.png" HeightRequest="50" WidthRequest="50"/>
+                    <StackLayout>
+                        <Label Text="Organic Bananas" TextColor="White"/>
+                        <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                            <ImageButton Source="minus.png" HeightRequest="30" WidthRequest="30"/>
+                            <Label Text="1" TextColor="White"/>
+                            <ImageButton Source="plus.png" HeightRequest="25" WidthRequest="25"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label Text="$3.00" TextColor="white" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20" Background="transparent" BorderColor="White">
+                    <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="75" HorizontalOptions="Center">
+                        <Image Source="jahe.png" HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="Ginger" TextColor="White"/>
+                            <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                                <ImageButton Source="minus.png" HeightRequest="30" WidthRequest="30"/>
+                                <Label Text="1" TextColor="White"/>
+                                <ImageButton Source="plus.png" HeightRequest="25" WidthRequest="25"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <Label Text="$2,99" TextColor="white" />
+                    </StackLayout>
+                </Frame>
+            <Button Text=" Go to Checkout" Margin="30, 20, 30, 20" TextColor="White" CornerRadius="20" Background="green" Clicked="gotocheckout"/>
+            <StackLayout VerticalOptions="End">
+                <Frame CornerRadius="20" BackgroundColor="White" Margin="30,20,30,20">
+                    <Grid>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                            <ImageButton Source="shop.png" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent" Grid.Column="0" Clicked="gotoshop"/>
+                            <ImageButton Source="explore.png" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent" Grid.Column="1" Clicked="gotoexplore"/>
+                            <ImageButton Source="cart.png" HeightRequest="45" WidthRequest="45" BackgroundColor="Transparent" Grid.Column="2" Clicked="gotocart"/>
+                            <ImageButton Source="favourite.png" HeightRequest="60" WidthRequest="60" BackgroundColor="Transparent" Grid.Column="3" Clicked="gotofavourite"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

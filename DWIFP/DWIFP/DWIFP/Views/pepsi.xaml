@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="DWI.Views.pepsi"
+             BackgroundImageSource="bgrn.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" CornerRadius="20" HorizontalOptions="Center" Margin="30,40,30,20">
+                <StackLayout>
+                    <Image Source="pepsi.png" HeightRequest="200" WidthRequest="200"/>
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+                        <Label Text="Pepsi family" TextColor="Black"/>
+                        <Label Text="$2.99" TextColor="Black"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <Label Text="Description : pep sipepep preman preman oe oi pep sipepep preman preman oi oi"/>
+            </Frame>
+            <Button Text=" ADD ALL TO CART" Margin="30, 140, 30, 20" TextColor="White" CornerRadius="25" Background="green" Clicked="gotocart"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

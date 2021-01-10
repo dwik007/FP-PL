@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="DWI.Views.checkout">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="275">
+                <Label Text=" Checkout" FontSize="Title" TextColor="Black" HorizontalOptions="Start"/>
+                <ImageButton Source="silang.png" HeightRequest="25" WidthRequest="25" CornerRadius="50" />
+            </StackLayout>
+            <Grid>
+                <Frame BorderColor="Black" CornerRadius="20" Background="transparent" Grid.Row="0">
+                    <StackLayout Orientation="Horizontal" Spacing="189" >
+                        <Label Text="Delivery" TextColor="Gray" FontSize="Medium" Grid.Column="0"/>
+                    <Label Text="Select Method" TextColor="Black" FontSize="Medium" Grid.Column="2"/>
+                </StackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="20" Background="transparent" Grid.Row="1">
+                    <StackLayout Orientation="Horizontal" Spacing="265">
+                        <Label Text="Payment" TextColor="Gray" FontSize="Medium" Grid.Column="0"/>
+                        <ImageButton Source="visa.png" HeightRequest="30" WidthRequest="30" Grid.Column="1"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="20" Background="transparent" Grid.Row="2">
+                    <StackLayout Orientation="Horizontal" Spacing="150" >
+                        <Label Text="Promo Code" TextColor="Gray" FontSize="Medium" Grid.Column="0"/>
+                        <Label Text="Pick discount" TextColor="Black" FontSize="Medium" Grid.Column="1"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="20" Background="transparent" Grid.Row="3">
+                    <StackLayout Orientation="Horizontal" Spacing="220">
+                        <Label Text="Total Cost" TextColor="Gray" FontSize="Medium" Grid.Column="0"/>
+                        <Label Text="$13.97" TextColor="Black" FontSize="Medium" Grid.Column="2"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+            <Label Text="By placing an order you agree to our Terms and Conditions"/>
+            <Button Text="PLACE ORDER" Margin="30, 200, 30, 20" TextColor="White" CornerRadius="20" Background="green" Clicked="gotoordersukses"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

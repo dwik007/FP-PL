@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DWI.Views.Login"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="bgrn.png">
+    <StackLayout>
+        <Frame CornerRadius="20">
+            <StackLayout>
+                <Image Source="logos.png" HeightRequest="200" WidthRequest="200"/>
+                <StackLayout Margin="0,0,0,0" Orientation="Horizontal" Spacing="100" HorizontalOptions="Center">
+                    <Label Text="Login" FontSize="Large" TextColor="Black"/>
+                    <Label Text="Sign-Up" FontSize="Large" TextColor="Black">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GotoRegister"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <StackLayout Margin="30,20,30,30">
+            <Label Text="Email Address" TextColor="White"/>
+            <Entry Placeholder="Email" PlaceholderColor="White" TextColor="White"/>
+            <Label Text="Password" TextColor="White"/>
+            <Entry Placeholder="Password" PlaceholderColor="White" IsPassword="True" TextColor="White"/>
+
+            <Label Text="Forgot passcode?" FontSize="Medium" FontAttributes="Bold" TextColor="OrangeRed" Margin="0,20,0,0"/>
+        </StackLayout>
+
+        <Button Text="Login" TextColor="White" BackgroundColor="Green" Margin="30,20,30,20" CornerRadius="10" Clicked="SigninProcedure"/>
+
+    </StackLayout>
+</ContentPage>
